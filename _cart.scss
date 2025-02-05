@@ -1,0 +1,234 @@
+.top-cart {
+    height: 400px;
+    background-image: url(images/cart.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.top-cart__heading {
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 127px;
+}
+.name-box__item {
+    padding-right: 27px;
+}
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+    &__form {
+        border-radius: 20px;
+        background: rgb(247, 246, 246);
+        min-height: 556px;
+        grid-column: span 4;
+    }
+    &__content {
+        grid-column: span 8;
+    }
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+    &__item {
+        padding-top: 25px;
+        padding-bottom: 32px;
+        border-top: 0.5px solid rgb(202, 205, 216);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__info {
+        width: 226px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__product-name {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__p {
+        color: rgb(136, 136, 136);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__product-price {
+        color: rgb(5, 5, 5);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0%;
+    }
+    &__product-links {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        letter-spacing: 0px;
+        text-align: center;
+        text-decoration-line: underline;
+        font-family: Montserrat;
+    }
+    &__item-links {
+        display: flex;
+        gap: 30px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__inp {
+        border-radius: 6px;
+        background: rgb(247, 246, 246);
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 210%;
+        letter-spacing: 0px;
+        text-align: center;
+        font-family: Poppins;
+        width: 71px;
+        height: 51px;
+        border: none;
+    }
+    &__form-input {
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+        padding-top: 35px;
+    }
+    &__input-title {
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        font-size: 24px;
+        padding-top: 42px;
+    }
+    &__input {
+        border-bottom: 1px solid rgb(202, 205, 216);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 288px;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: start;
+        background-color: rgb(247, 246, 246);
+    }
+    &__input::placeholder {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: start;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+    }
+    &__input:focus {
+        outline: none;
+    }
+    &__form-text {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-top: 64px;
+    }
+    &__form-btn {
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-top: 18px;
+        width: 290px;
+        height: 41px;
+        font-family: Montserrat;
+    }
+    &__form-btn:hover {
+        background: rgb(0, 0, 0);
+        font-weight: 500;
+        transition-duration: 700ms;
+        color: rgb(255, 255, 255);
+    }
+    &__btn-box {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        padding-top: 18px;
+    }
+    
+    &__btn {
+        color: rgb(2, 2, 2);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        width: 200px;
+        height: 37px;
+        font-family: Montserrat;
+        background-color: #fff;
+    }
+    &__btn:hover {
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        transition-duration: 700ms;
+    }
+}
+
+.catalog-link {
+    
+    padding-top: 33px;
+    padding-bottom: 65px;
+    &__text {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration-line: underline;
+        font-family: Montserrat;
+    }
+    &__text:hover {
+            color: rgb(136, 136, 136);
+            text-decoration-line: none;
+        }
+}
